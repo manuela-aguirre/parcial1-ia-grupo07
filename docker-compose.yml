@@ -1,0 +1,8 @@
+services:
+  analisis:
+    build: .
+    container_name: parcial1_ia_grupo07
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: python analisis.py

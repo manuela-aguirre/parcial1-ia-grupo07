@@ -1,0 +1,14 @@
+tipo_residuo,cantidad_kg,dia_recoleccion,zona
+Orgánico,450,Lunes,Centro
+Plástico,320,Martes,Norte
+Papel,280,Miércoles,Sur
+Vidrio,150,Jueves,Oriente
+Metal,120,Viernes,Occidente
+Orgánico,480,Lunes,Centro
+Plástico,350,Martes,Norte
+Papel,300,Miércoles,Sur
+Vidrio,160,Jueves,Oriente
+Metal,130,Viernes,Occidente
+Orgánico,0.45,Lunes,Centro
+Plástico,340,Martes,Norte
+Papel,,Miércoles,Sur
