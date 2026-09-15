@@ -9,7 +9,7 @@ Pasos para reproducir el entorno:
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/<tu-usuario>/parcial1-ia-grupo07.git
+git clone https://github.com/manuela-aguirre/parcial1-ia-grupo07.git
 cd parcial1-ia-grupo07
 
 # 2. Construir la imagen y levantar el contenedor
@@ -76,19 +76,19 @@ se repiten 2 veces.
 | Mínimo | 0.45 kg | 120.00 kg |
 | Máximo | 480.00 kg | 480.00 kg |
 
-**¿El promedio es representativo?** En los datos crudos, no del todo: la media
-(256.70) está un 11.4% por debajo de la mediana (290.00), señal de que un valor
-atípico está desplazando el promedio. Al depurar el dataset, media (280.00) y
-mediana (300.00) se acercan (diferencia de solo 6.7%), lo que la vuelve una
-medida bastante más confiable. Además, la desviación estándar depurada
-(126.02 kg) sigue siendo alta en relación con la media (~45%), lo que indica que
+**¿El promedio es representativo?** En los datos crudos: la media
+(256.70) está un 11.4% por debajo de la mediana (290.00), esto es una señal de que un valor
+atípico está desplazando el promedio. Al limpiar el dataset media (280.00) y
+mediana (300.00) se acercan (diferencia de solo 6.7%) lo que la vuelve una
+medida bastante más confiable. Además la desviación estándar depurada
+(126.02 kg) sigue siendo alta en relación con la media (45%), lo que indica que
 hay bastante dispersión entre tipos de residuo (el orgánico pesa mucho más que
-el metal), no solo por el valor atípico.
+el metal) no solo por el valor atípico.
 
 ## 5. Visualización
 
 - `distribucion_cantidad_kg.png`: histograma de `cantidad_kg` (datos depurados).
-  Muestra que la mayoría de los registros se concentran entre 120–350 kg, con un
+  Muestra que la mayoría de los registros se concentran entre 120–350 kg con un
   grupo más pequeño cerca de 450–480 kg (los dos registros de Orgánico), lo que
   confirma la dispersión reflejada en la desviación estándar.
 - `cantidad_por_tipo_residuo.png`: promedio de `cantidad_kg` por `tipo_residuo`.
@@ -125,7 +125,3 @@ urbanos en la región, donde el componente orgánico domina el peso total.
 - Cada zona aparece asociada a un único tipo de residuo en el dataset, así que no
   se puede comparar "qué zona genera más basura en total" (solo por tipo).
 - No hay datos de población por zona para normalizar a kg per cápita.
-
-**Datos adicionales necesarios**: población por zona, fecha exacta de cada
-recolección, todos los tipos de residuo por cada zona (no solo uno), y datos de
-varios meses para evaluar tendencia y estacionalidad.
